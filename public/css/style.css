@@ -1,0 +1,30 @@
+*{
+    margin:0
+    padding:0
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+nav {
+    
+    background-color: yellow;
+    color: white
+}
+.nombre-super {
+    font-size: 32px;
+    font-weight: 700px;
+    font-style: oblique;
+
+}
+
+.prueba1 {
+    color:blue;
+}
+
+#usoID {
+    color: burlywood;
+
+}
