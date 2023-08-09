@@ -5,13 +5,77 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;;
     background-color: white;
+    overflow: auto;
 }
+
 nav {
     
-    background-color: yellow;
-    color: white
+    background-color: #EAC926;
+    color: #666;
+
+}
+.fa-bars{
+    background-color: #1259c3;
+    color: #fff;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 4px;
+    margin:10px;
+    text-align: center;
+}
+.burguer{
+    text-align: center;
+    padding: 15px 0px;
+}
+.fa-truck{
+    background-color: #fff;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 4px;
+
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.container1{
+    overflow: auto;
+    
+}
+
+.card{
+    width: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 8px;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #39b54a;
+}
+
+.precio{
+    font-size: 18px;
+
+}
+.descuento{
+    font-size: 16px;
+
+}
+.descripción{
+    font-size: ;
+
 }
 .nombre-super {
     font-size: 32px;
@@ -27,4 +91,54 @@ nav {
 #usoID {
     color: burlywood;
 
+}
+
+.formulario {
+  /* Aplicar estilos para el formulario y sus elementos */
+  
+    display: block; /* Hace que el formulario ocupe todo el ancho disponible */
+    max-width: 400px; /* Para ajustar el ancho máximo  */
+    margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+    background-color: #FFFFF0; /*fondo del formulario*/
+    
+  
+}
+
+
+label, input{
+    /* Estilos para los elementos del formulario */
+    border: none;
+    display: block; /* Para que cada elemento ocupe una línea completa */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    width: 380px;
+    border-radius: 4px ; 
+    border: 2px solid #1E90FF;
+    padding: 10px 20px; 
+
+}
+
+button {
+    border: none; /* Elimina el borde predeterminado del botón */
+    background-color: #1E90FF; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Relleno (espacio interno) del botón */
+    border-radius: 4px; /* Añade bordes redondeados */
+    cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
+    
+}
+
+button:hover {
+    background-color: #4169e1fd ; /* Nuevo color de fondo al pasar el cursor color usado: royalblue */
+  }
+
+  /*min... medida mínima*/
+@media(min-width:460px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 35%; /*ancho de card para más de 460px*/
+    }
 }

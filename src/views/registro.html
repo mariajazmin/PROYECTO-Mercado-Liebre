@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    
+    <title>REGISTRO</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo-mercado-liebre.svg" width="200px" alt="logo de Mercado Liebre"/>
+
+            
+            <form action="" method="get">
+                <input
+                     type="text"
+                     name=""
+                     id=""
+                     placeholder="Buscar productos o marcas"
+                />
+                <button type="submit">enviar</button>
+            </form>
+           
+            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/registro">Creá tu cuenta<i class="fa-regular fa-adress card" ></i></a></li>
+                <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket" ></i> </a></li>
+                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping" ></i></a></li>
+            </ul>
+            <img src="img/img-home-banner.jpg" width="300px" alt="logo de Mercado Liebre"/>
+            
+        </nav>
+
+    </header>
+
+
+<main>
+    <form class="formulario" action="/registro" method="POST">
+        <input 
+           type="text" 
+           name="nombre" 
+           placeholder="Ingrese su nombre"
+           id="" required/>
+           
+        <input 
+          type="text" 
+          name="apellido" 
+          placeholder="Ingrese su apelllido"
+          id="" required/>
+        <input type="email" name="email" placeholder="Ingrese su correo electrónico" required/>
+        <input type="tel" name="email" placeholder="Ingrese su número de teléfono o celular" required/>
+        <input type="password" name="password" placeholder="Contraseña" required/>
+        <button type="submit">ENVIAR</button>
+
+        <label for="">Aceptar los términos y condiciones</label>
+        <input type="checkbox" name="politica" value="ACEPTO" />
+        <label for="">Aceptar el envío de newsletter</label>
+        <input type="checkbox" name="politica" value="ACEPTAR NEWSLETTER" />
+        <button type="submit">ENVIAR</button>
+
+
+
+    </form>
+</main>
