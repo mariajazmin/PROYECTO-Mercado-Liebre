@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("./partials/head") %>
+    <title>REGISTRO</title>
+</head>
+
+<body>
+    <%- include ("./partials/header")%>
+    <main>
+        <form class="formulario" action="/register" method="POST">
+            <input 
+               type="text" 
+               name="nombre" 
+               placeholder="Ingrese su nombre"
+               id="" required/>
+               
+            <input 
+              type="text" 
+              name="apellido" 
+              placeholder="Ingrese su apelllido"
+              id="" required/>
+            <input type="email" name="email" placeholder="Ingrese su correo electrónico" required/>
+            <input type="tel" name="email" placeholder="Ingrese su número de teléfono o celular" required/>
+            <input type="password" name="password" placeholder="Contraseña" required/>
+            <button type="submit">ENVIAR</button>
+    
+    
+    
+    
+        </form>
+      
+    </main>
+</body>
+<%- include ("./partials/footer")%>

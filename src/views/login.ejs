@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("./partials/head") %>
+    <link rel="stylesheet" href="css/stylelogin.css"/>
+</head>
+    
+<body>
+
+    <%- include ("./partials/header")%>
+    <main>
+        
+        <section>
+            <form class="form" action="/login" method="POST">
+                
+                
+                <input type="text" id="username" name="username" placeholder="Nombre de Usuario" required><br>
+                
+                <input type="password" id="password" name="password" placeholder="Contraseña" required><br>
+                <button type="submit">LOGIN</button>
+    
+            </form>
+            <div class="register">
+    
+                <p>No tienes una cuenta? <a href="./register">Regístrate aquí</a></p>
+            </div>
+        </section>
+    </main>
+    <%- include ("./partials/footer")%>
+</body>
+</html>

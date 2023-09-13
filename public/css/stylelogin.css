@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+.form {
+    /* Aplicar estilos para el formulario y sus elementos */
+    
+      display: block; /* Hace que el formulario ocupe todo el ancho disponible */
+      max-width: 400px; /* Para ajustar el ancho máximo  */
+      margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+      background-color: #FFFFF0; /*fondo del formulario*/
+      margin-top: 50px;
+    
+}
+  
+  
+
+
+.register{
+    text-align: center;
+}
+  
+
+.footer {
+    padding-top: 50px;
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    justify-content: center;
+}
+  
+.fa-credit-card {
+    font-size: 34px; 
+    color: #1259c3;
+}
+.fa-gift {
+    font-size: 34px; 
+    color: #1259c3;
+}
+  .fa-truck-fast{
+    font-size: 34px; 
+    color: #1e9406;
+    
+}
+  .fa-lock{
+    font-size: 34px; 
+    color: #1259c3;
+    
+}

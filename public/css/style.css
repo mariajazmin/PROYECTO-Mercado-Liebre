@@ -1,13 +1,14 @@
 *{
-    margin:0
-    padding:0
+    margin:0;
+    padding:0;
     
 }
 
 body {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     background-color: white;
     overflow: auto;
+    font-size: 20px;
 }
 
 nav {
@@ -16,7 +17,43 @@ nav {
     color: #666;
 
 }
-.fa-bars{
+
+.buscador {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbutton{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.searchbutton:hover {
+    background-color: #4169e1fd 
+}
+
+.buscador input {
+    width: 100%;
+}
+
+
+.fa-address-card{
+    margin: 6px;
+    font-size: 24px;
+
+}
+.fa-right-to-bracket{
+    margin: 6px;
+    font-size: 24px;
+}
+.fa-basket-shopping{
+    margin: 6px;
+    font-size: 24px;
+
+}
+.fa-bars{ /*para menú hamburguesa*/
+
     background-color: #1259c3;
     color: #fff;
     font-size: 25px;
@@ -25,19 +62,12 @@ nav {
     margin:10px;
     text-align: center;
 }
+
 .burguer{
     text-align: center;
     padding: 15px 0px;
 }
-.fa-truck{
-    background-color: #fff;
-    color: #39b54a;
-    border: 1px solid #39b54a;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 4px;
 
-}
 
 .banner{
     width: 100%;
@@ -47,49 +77,78 @@ nav {
     width: 100%;
 }
 
+#usoID-en-secciones {
+    color: #666;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
 .container1{
     overflow: auto;
+    align-items: center;
+    
+}
+div h2{
+    margin-left: 20px;
+}
+
+.container{
+    justify-content: center;
+}
+.card{
+    width: 80%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 25px;
+    align-content: center;
+    align-items: center;
+    transition: all 200ms ease;
     
 }
 
-.card{
-    width: 80%;
+.card:hover{
+    border: 0;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    padding: 8px;
-    margin: 10px;
+    transform: translateY(-3%);
 }
 
 .card img {
     width: 100%;
     border-bottom: 1px solid #39b54a;
+    align-items: center;
 }
 
+
+.flexprecio{
+    display: flex;
+    margin: 5px 0px;                                                                                                                                                    |
+    justify-content: center;
+    
+}
 .precio{
     font-size: 18px;
-
+    align-items: center;
+    justify-content: center;
+    
 }
+div p{
+    text-align: center;
+}/*NO ME DEJA CENTRAAARR*/
+
 .descuento{
     font-size: 16px;
-
+    color:#39b54a;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
 }
 .descripción{
-    font-size: ;
-
-}
-.nombre-super {
-    font-size: 32px;
-    font-weight: 700px;
-    font-style: oblique;
-
-}
-
-.prueba1 {
-    color:blue;
-}
-
-#usoID {
-    color: burlywood;
+    font-size: 16px;
+    
 
 }
 
@@ -100,7 +159,7 @@ nav {
     max-width: 400px; /* Para ajustar el ancho máximo  */
     margin: 0 auto; /* Centra el formulario horizontalmente en la página */
     background-color: #FFFFF0; /*fondo del formulario*/
-    
+    margin-top: 50px;
   
 }
 
@@ -114,6 +173,7 @@ label, input{
     border-radius: 4px ; 
     border: 2px solid #1E90FF;
     padding: 10px 20px; 
+    font-size: 19px;
 
 }
 
@@ -123,15 +183,20 @@ button {
     color: white; /* Color de texto */
     padding: 10px 20px; /* Relleno (espacio interno) del botón */
     border-radius: 4px; /* Añade bordes redondeados */
+    margin-bottom: 20px;
+    margin-top: 10px;
     cursor: pointer; /* Cambia el cursor cuando se pasa por encima del botón */
-    
+    text-decoration: none;
+    transition: 400ms;
+}
+  
+button:hover {
+    background-color: #0022AA;
+    transform: scale(1.1);
 }
 
-button:hover {
-    background-color: #4169e1fd ; /* Nuevo color de fondo al pasar el cursor color usado: royalblue */
-  }
 
-  /*min... medida mínima*/
+
 @media(min-width:460px){
 
     .container{
@@ -140,5 +205,295 @@ button:hover {
     }
     .card{
         width: 35%; /*ancho de card para más de 460px*/
+    }
+    
+    .buscador{
+        width: 35%;
+
+    }
+
+}
+
+
+@media(min-width: 441px){
+    .right-navbar li{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom:10px;
+    }
+}
+
+@media(min-width: 440px){
+    .burguer{
+       display: none; 
+    }
+    
+}
+
+@media(min-width:768px){
+    .left-navbar{
+        border-bottom: 2px red;
+        display: flex;
+        padding: 8px;
+        align-items: center;
+    }
+    
+    .copy-header{
+        max-width: 350px;
+        text-align:center;
+        display: flex;
+    }
+    .fa-bars{
+        display: none;
+    }
+    .right-navbar{
+        border-bottom: 2px red;
+        display: flex;
+        padding: 8px;
+    }
+    .up{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+li{
+    display: flex;
+    padding: 13px;
+}
+.right-navbar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Añade margen inferior entre los elementos */
+}
+.right-navbar a {
+    display: flex;
+    align-items: center;
+}
+.right-navbar i {
+    margin-left: 5px; /* Añade espacio entre el texto del enlace y el icono */
+}
+
+.Navbottom a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+@media(max-width:440px){
+    
+    .Navbottom{
+        display: none;
+    }
+    .flexprecio{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .precio{
+        font-size: 25px;
+        align-content: center;
+
+    }
+    .descuento{
+        font-size: 25px;
+        text-align: center;
+
+    }
+    .descripción{
+        font-size: 27px;
+
+    }
+    .card:hover{
+        border: 0;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: translateY(-3%);
+    }
+}
+
+@media(min-width: 520px){
+    .card{
+        font-size: 18px;
+        text-align: center;
+    }
+    .card:hover{
+        border: 0;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: translateY(-3%);
+    }
+
+}
+@media(max-width: 540px){
+    .card{
+        font-size: 18px;
+        text-align: center;
+    }
+    .card:hover{
+        border: 0;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: translateY(-3%);
+    }
+
+}
+
+
+@media(min-width:481px){
+    .Navbottom{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1280px){
+    .card{
+        font-size: 25px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+    .flexprecio{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .precio{
+        font-size: 25px;
+        align-content: center;
+
+    }
+    .descuento{
+        font-size: 25px;
+        text-align: center;
+
+    }
+    .descripción{
+        font-size: 35px;
+
+    }
+    .card:hover{
+        border: 0;
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transform: translateY(-3%);
+    }
+
+}
+
+.div {
+    font-size: 25px;
+}
+.footer {
+    padding-top: 50px;
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+    justify-content: center;
+    font-size: 15px;
+}
+
+.footer i:hover{
+    color: #0022AA;
+}
+.fa-credit-card {
+    font-size: 34px; 
+    color: #1259c3;
+}
+.fa-gift {
+    font-size: 30px; 
+    color: #1259c3;
+}
+
+
+.fa-truck{
+    font-size: 20px;
+    position: relative;
+    right: -84px;
+    top: -27px;
+    background-color: #fff;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 4px;
+    transition: 500ms;
+    cursor: pointer;
+
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
+    
+}
+
+
+.fa-lock{
+    font-size: 34px; 
+    color: #1259c3;
+    
+}
+
+@media(min-width:1280px){
+    .flexfooter {
+        display: flex;
+
+    }
+    .Copyright{
+        position: relative;
+        top: 80px;
+        right: 470px;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media(min-width:200px){
+    .fa-truck{
+        font-size: 20px;
+        position: relative;
+        right: -130px;
+        top: -27px;
+    
+    }
+    .fa-truck:hover{
+        transform: rotate(-90deg);
+        
+    }
+}
+
+
+@media(min-width:400px){
+    .fa-truck{
+        font-size: 20px;
+        position: relative;
+        right: -120px;
+        top: -27px;
+    
+    }
+    .fa-truck:hover{
+        transform: rotate(-90deg);
+        
+    }
+}
+
+@media(min-width:1000px){
+    .fa-truck{
+        font-size: 20px;
+        position: relative;
+        right: -160px;
+        top: -27px;
+    
+    }
+    .fa-truck:hover{
+        transform: rotate(-90deg);
     }
 }
